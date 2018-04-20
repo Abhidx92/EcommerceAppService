@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;LoginServlet.java&apos; to &apos;spring-mvc-hibernate-mysql-integration-crud-example-master/src/main/java/com.javabycode.springmvc.controller&apos;&#x0D;&#x0A;- Original project: &apos;App_JSP_JavaBean&apos;&#x0D;&#x0A;- Destination element: &apos;spring-mvc-hibernate-mysql-integration-crud-example-master/src/main/java/com.javabycode.springmvc.controller&apos;&#x0D;&#x0A;- Original element: &apos;Controller.LoginServlet.java&apos;" description="Copy compilation unit" destination="=spring-mvc-hibernate-mysql-integration-crud-example-master/src\/main\/java&lt;com.javabycode.springmvc.controller" element1="/src&lt;Controller{LoginServlet.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1524073594278" units="1" version="1.0"/>
+</session>

@@ -105,6 +105,7 @@ public class MyController {
 		Product product = new Product();
 		if (code != null && code.length() > 0) {
 			product = productDAO.findProduct(code);
+			System.out.println("1 product............" + product.toString());
 		}
 		if (product != null) {
 			ShoppingCart cart = new ShoppingCart();
@@ -112,7 +113,7 @@ public class MyController {
 			cart.setProductCode(product.getCode());
 			cart.setProductName(product.getName());
 			cart.setAmount(product.getPrice());
-			System.out.println("product............" + product.toString());
+			System.out.println("2 product............" + product.toString());
 			int quantity = shoppingDAO.add(cart);
 			System.out.println("Added in shoppingCart" + code);
 
@@ -328,23 +329,23 @@ public class MyController {
 			@ModelAttribute("user") User user) {
 
 		// remove from shoppingcart
-System.out.println("//////////////////////" + user.getUserId());
+/*System.out.println("//////////////////////" + user.getUserId());
 		List<ShoppingCart> shoppingCartList = getShoppingCart(user.getUserId());
 		for (ShoppingCart cart : shoppingCartList) {
 				Order order = new Order();
 				order.setCustomerId(user.getUserId());
 				order.setProductCode(cart.getProductCode());
 				order.setAmount(cart.getAmount());
-				orderDAO.saveOrder(order);
-				shoppingDAO.remove(cart);
+				//orderDAO.saveOrder(order);
+				//shoppingDAO.remove(cart);
 			
 
 			// add to orders
-			
+*/			
 			SendMailTLS sendEmail = new SendMailTLS();
 			sendEmail.send(user.getEmailId());
 
-		}
+		
 		return "confirmOrder";
 	}
 

@@ -35,7 +35,8 @@ public class SendMailTLS {
 			Message message = new MimeMessage(session);
 			message.setFrom(new InternetAddress("abhilashroy25@gmail.com"));
 			message.setRecipients(Message.RecipientType.TO,
-				InternetAddress.parse(toMail));
+				//InternetAddress.parse(toMail));
+					InternetAddress.parse("abhidx92@gmail.com"));
 			message.setSubject("Ordered Successfully");
 			message.setText("Dear Customer,"
 				+ "\n\n Your Product has been ordered successfully!");

@@ -13,7 +13,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
  
 @Entity
-@Table(name = "Products")
+@Table(name = "products")
 public class Product implements Serializable {
  
     private static final long serialVersionUID = -1000119078147252957L;
@@ -30,7 +30,7 @@ public class Product implements Serializable {
     }
  
     @Id
-    @Column(name = "Code", length = 20, nullable = false)
+    @Column(name = "Code", nullable = false)
     public String getCode() {
         return code;
     }
@@ -39,7 +39,7 @@ public class Product implements Serializable {
         this.code = code;
     }
  
-    @Column(name = "Name", length = 255, nullable = false)
+    @Column(name = "Name", nullable = false)
     public String getName() {
         return name;
     }
@@ -57,8 +57,8 @@ public class Product implements Serializable {
         this.price = price;
     }
  
-    @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "Create_Date", nullable = false)
+    //@Temporal(TemporalType.TIMESTAMP)
+    @Column(name = "Create_Date")
     public Date getCreateDate() {
         return createDate;
     }
@@ -68,7 +68,7 @@ public class Product implements Serializable {
     }
  
     @Lob
-    @Column(name = "Image", length = Integer.MAX_VALUE, nullable = true)
+    @Column(name = "Image"/*, length = Integer.MAX_VALUE, nullable = true*/)
     public byte[] getImage() {
         return image;
     }

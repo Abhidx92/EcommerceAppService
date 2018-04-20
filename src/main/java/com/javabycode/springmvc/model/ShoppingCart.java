@@ -6,7 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "shoppingCart")
+@Table(name = "shoppingcart")
 public class ShoppingCart {
 int customerId;
 String productCode;

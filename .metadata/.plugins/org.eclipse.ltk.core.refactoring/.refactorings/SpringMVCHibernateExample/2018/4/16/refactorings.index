@@ -1,0 +1,20 @@
+1523757085804	Delete element
+1523785674701	Rename resource 'ShoppingCart.jsp'
+1523997366236	Rename type 'Customer'
+1523997531501	Rename type 'CustomerDAO'
+1523997547644	Rename type 'CustomerDaoImpl'
+1524044542290	Delete element
+1524045050185	Delete element
+1524048488645	Delete element
+1524075705526	Delete element
+1524077724759	Rename field 'userId'
+1524078414610	Rename field 'Id'
+1524087593435	Rename resource 'core_java.jpg'
+1524087614029	Rename resource 'csharp.jpg'
+1524087635063	Rename resource 'oracleXML.jpg'
+1524087650079	Rename resource 'springBeginner.jpg'
+1524087666907	Rename resource 'swift.jpg'
+1524098163124	Move 'jquery.1.10.2.min.js' to 'js'
+1524098285862	Move 'js' to 'webapp'
+1524224731339	Rename field 'id'
+1524224829154	Rename resource 'OrderList.jsp'

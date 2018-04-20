@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ecommerce-starter/src/main/resources/application.properties-sample&apos; to &apos;application.properties&apos;" description="Rename resource &apos;application.properties-sample&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/application.properties-sample" name="application.properties" stamp="1524016207174" updateReferences="true"/>
+</session>

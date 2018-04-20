@@ -24,14 +24,14 @@ public class ShoppingDaoImpl extends AbstractDao<Serializable, ShoppingCart>impl
 		{
 			int currQuantity = sCart.getQuantity() + 1;
 			shoppingCart.setQuantity(currQuantity);
-			Query query = getSession().createSQLQuery("update shoppingCart set quantity = :quantity where customerId = :customerId AND productCode = :productCode");
+			Query query = getSession().createSQLQuery("update shoppingcart set quantity = :quantity where customerId = :customerId AND productCode = :productCode");
 			query.setInteger("quantity", currQuantity);
 			query.setInteger("customerId", sCart.getCustomerId());
 			query. setString("productCode", sCart.getProductCode());
 			query.executeUpdate();
 			return sCart.getQuantity();
 		}
-		Query query = getSession().createSQLQuery("insert into shoppingCart (customerId, productCode,quantity,productName,amount) values (:customerId, :productCode,:quantity, :productName,:amount)");
+		Query query = getSession().createSQLQuery("insert into shoppingcart (customerId, productCode,quantity,productName,amount) values (:customerId, :productCode,:quantity, :productName,:amount)");
 		query.setInteger("customerId", shoppingCart.getCustomerId());
 		query. setString("productCode", shoppingCart.getProductCode());
 		query.setInteger("quantity", shoppingCart.getQuantity()+1);
