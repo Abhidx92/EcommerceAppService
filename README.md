@@ -1,8 +1,4 @@
-#Spring MVC Hibernate Mysql integration CRUD Example 
-
-Guide
-
-This is a part of the tutorial http://javabycode.com/spring-framework-tutorial/spring-mvc-tutorial/spring-mvc-hibernate-mysql-integration-crud-example-tutorial.html
+#Simple Ecommerce with Spring MVC Hibernate Mysql Example 
 
 What you'll need
 
@@ -11,4 +7,13 @@ Maven 3 or later
 Spring MVC 4.2.6.RELEASE  
 Build
 
-mvn clean install    
+mvn clean install   
+
+Functions:
+User Login/Logout
+Login option on Azure Cloud 
+Error/Unauthorization handled
+View different products
+Buy products
+View orders
+Email notification after oredr
